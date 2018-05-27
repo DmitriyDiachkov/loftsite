@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- reset css-->
+    <link rel="stylesheet" href="reset.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!-- main css -->
+    <link rel="stylesheet/less" href="main.less">
+    <!--font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+</html>
+
+<body>
+<div class="container">
+    <header class="header-about-us">
+        <nav>
+            <a class="logo" href="#"><img src="images/2-layers.png"></a>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Столы</a></li>
+                <li><a href="#">Стеллажи</a></li>
+                <li><a href="#">Диваны</a></li>
+                <li><a href="#">Декор</a></li>
+            </ul>
+        </nav>
+        <div class="header-content header-content-about-us">
+            <img src="images/About-us-text.png">
+        </div>
+        <p class="header-text header-text-about-us">
+            <i>Мы— АNGАRXIII</i><br>
+            Мастерская мебели <i>с характером.</i> Делаем мебель и элементы интерьера <i>для лофтов.</i><br>
+            <i>Авторские проекты, смелые</i> дизайнерские решения, ручная работа и <i>контроль</i> качества.<br>
+            Делаем <i>как себе</i>, поэтому на нашем производстве профессионализм совмещен <i>с любовью</i> к делу.
+        </p>
+    </header>
+    <section class="about-us-content">
+        <div class="about-us-main-content">
+            <div class="about-us-blocks">
+                <div></div>
+                <div>
+                    <p>
+                        Производство
+                    </p>
+                </div>
+                <div></div>
+                <div>
+                    <span class="span-right">
+                        <p>
+                            Наша производственная инфраструктура
+                            позволяет реализовать проекты
+                            на высоком уровне и в сжатые сроки
+                        </p>
+                    </span>
+                </div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span class="span-left">
+                        <p>
+                            В мебели мы видим не вещь, а личность
+                            со своими уникальными чертами характера,
+                            со своей историей превращения
+                            из чертежа в жизнь.
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="about-us-whoare">
+                <div class="about-us-whoare-block">
+                    <div class="whoare-block1"></div>
+                    <div class="whoare-block2">
+                        <p>УТП</p>
+                    </div>
+                </div>
+                <div class="about-us-whoare-block">
+                    <div class="whoare-block3">
+                        <p>Основатель проекта</p>
+                    </div>
+                    <div class="whoare-block4">
+                        <span>
+                            <p><i>Александр Заяц</i><br>
+Характер вспыльчивый, загорается от новых идей,
+умеет заражать лофтом всех вокруг себя.
+ Отвечает за драйв и rock-n-roll проекта.
+Творческий вдохновитель
+и генераторбезбашенных идей.
+                            <p>+7(960)534-13-13      zav160789@gmail.com</p>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <a class="button-project-red" href="#">
+                Обсудить проект
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a class="logo" href="#"><img src="images/2-layers.png"></a>
+            <ul class="footer-navbar">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Столы</a></li>
+                <li><a href="#">Стеллажи</a></li>
+                <li><a href="#">Диваны</a></li>
+                <li><a href="#">Декор</a></li>
+            </ul>
+            <div class="footer-contacts">
+                <p>+7(960)534-13-13</p>
+                <p> zav160789@gmail.com </p>
+            </div>
+            <div class="footer-social">
+                <ul class="fa-icons">
+                    <li class="fa-icons-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="fa-icons-item"><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                    <li class="fa-icons-item"><a href=""><i class="fab fa-vk"></i></a></li>
+                    <li class="fa-icons-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.4/less.min.js"></script>
+<script>
+    $(function(){
+
+        $('.menuToggle').on('click', function() {
+            $('.menu').slideToggle(300, function(){
+                if( $(this).css('display') === "none"){
+                    $(this).removeAttr('style');
+                }
+            });
+
+        });
+
+    });
+</script>
+</body>
